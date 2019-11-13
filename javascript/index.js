@@ -1,5 +1,10 @@
 // Create global variables
 let password = '';
+const allCharacters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*_";
+const noSpecialCharacters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+const noNumericalCharacters = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz!@#$%^&*_";
+const noLowercaseCharacters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*_";
+const noUppercaseCharacters = "abcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*_";
 
 // Add event listener to generate button
 document.getElementById('generate').addEventListener("click", function() {
@@ -21,9 +26,14 @@ document.getElementById('generate').addEventListener("click", function() {
     alert("Please select at least one character type.");
     location.reload();
   }
+
+  // generate password based on user criteria
+  if (special == true && numerical == true && lowercase == true && uppercase == true) {
+    
+  }
 });
 
 // Add event listener to copy button
 document.getElementById('copy').addEventListener("click", function(){
-
+  // copy the password generated to the clipboard
 });

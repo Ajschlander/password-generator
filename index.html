@@ -6,24 +6,74 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Password Generator</title>
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
     <link rel="stylesheet" type="text/css" href="assets/css/index.css">
+    <!-- Linking to google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Literata|Lora&display=swap" rel="stylesheet">
   </head>
   <body>
-    <div class="container">
-      <div class="row">
-        <div class="col-12 text-center">
-          <h1>Password Generator</h1>
+
+    <div class="choices">
+      <!-- Enter a length field -->
+      <div class="header">
+        Choose from the following criteria to generate a unique password!
+      </div>
+      <hr>
+      <div class="length">
+        <div class="length-row">
+          Enter a length for your password (8 -128 characters):
+        </div>
+        <input type="text" class="length-row" name="length" placeholder="8" id="legnth-input">
+      </div>
+      <!-- Character type fields -->
+      <div class="character-types">
+        Character types
+      </div>
+      <!-- Select special characters or not -->
+      <div class="special-char">
+        <div class="special-char-row">
+          Please select whether you would like special characters or not:
+        </div>
+        <input type="checkbox" class="special-char-row" value="special-char" checked>Special characters (@, #, $, %, &, *, +)
+      </div>
+      <!-- Select Numerical characters or not -->
+      <div class="numerical-char">
+        <div class="numerical-char-row">
+          Please select whether you would like numerical characters or not:
+        </div>
+        <input type="checkbox" class="numerical-char-row" value="numerical-char" checked>Numerical characters (1, 2, 3, 4, 5)
+      </div>
+      <!-- Select lowercase or not -->
+      <div class="lowercase-char">
+        <div class="lowercase-char-row">
+          Please select whether you would like lowercase characters or not:
+        </div>
+        <input type="checkbox" class="lowercase-char-row" value="lowercase-char" checked>lowercase characters
+      </div>
+      <!-- Select uppercase or not -->
+      <div class="uppercase-char">
+        <div class="uppercase-char-row">
+          Please select whether you would like uppercase characters or not:
+        </div>
+        <input type="checkbox" class="uppercase-char-row" value="uppercase-char" checked>uppercase characters
+      </div>
+
+    </div>
+
+    <div class="generator-body">
+      <h1>Password Generator</h1>
+      <div class="generator">
+        <h4 class="generator-header">Generate a password</h4>
+        <hr>
+        <div class="password-area">
+          <p class="password">Your secure password</p>
+        </div>
+        <hr>
+        <div class="buttons">
+          <button type="button" class="generate-button" name="generate">Generate Password</button>
+          <button type="button" class="copy-button" name="copy">Copy to Clipboard</button>
         </div>
       </div>
     </div>
-    <div class="container main-content">
-      <div class="row">
-        <div class="col-xs-12 col-6">
-          <h4>Generate a password</h4>
-        </div>
-      </div>
-    </div>
+
   </body>
 </html>

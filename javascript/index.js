@@ -47,7 +47,7 @@ document.getElementById('generate').addEventListener("click", function() {
       return password;
     }
 
-    console.log(makePassword(length));
+    document.getElementById('password').innerHTML = makePassword(length);
   }
 
   // Generate password without special characters
@@ -61,7 +61,7 @@ document.getElementById('generate').addEventListener("click", function() {
       return password;
     }
 
-    console.log(makePassword(length));
+    document.getElementById('password').innerHTML = makePassword(length);
   }
 
   // Generate password without numerical characters
@@ -75,7 +75,7 @@ document.getElementById('generate').addEventListener("click", function() {
       return password;
     }
 
-    console.log(makePassword(length));
+    document.getElementById('password').innerHTML = makePassword(length);
   }
 
   // Generate password without lowercase characters
@@ -89,7 +89,7 @@ document.getElementById('generate').addEventListener("click", function() {
       return password;
     }
 
-    console.log(makePassword(length));
+    document.getElementById('password').innerHTML = makePassword(length);
   }
 
   // Generate password without uppercase characters
@@ -103,7 +103,7 @@ document.getElementById('generate').addEventListener("click", function() {
       return password;
     }
 
-    console.log(makePassword(length));
+    document.getElementById('password').innerHTML = makePassword(length);
   }
 
   // Generate password without special or numerical characters
@@ -117,7 +117,7 @@ document.getElementById('generate').addEventListener("click", function() {
       return password;
     }
 
-    console.log(makePassword(length));
+    document.getElementById('password').innerHTML = makePassword(length);
   }
 
   // Generate password without special or lowercase characters
@@ -131,7 +131,7 @@ document.getElementById('generate').addEventListener("click", function() {
       return password;
     }
 
-    console.log(makePassword(length));
+    document.getElementById('password').innerHTML = makePassword(length);
   }
 
   // Generate password without special or uppercase characters
@@ -145,7 +145,7 @@ document.getElementById('generate').addEventListener("click", function() {
       return password;
     }
 
-    console.log(makePassword(length));
+    document.getElementById('password').innerHTML = makePassword(length);
   }
 
   // Generate password without numerical or lowercase characters
@@ -159,7 +159,7 @@ document.getElementById('generate').addEventListener("click", function() {
       return password;
     }
 
-    console.log(makePassword(length));
+    document.getElementById('password').innerHTML = makePassword(length);
   }
 
   // Generate password without numerical or uppercase characters
@@ -173,7 +173,7 @@ document.getElementById('generate').addEventListener("click", function() {
       return password;
     }
 
-    console.log(makePassword(length));
+    document.getElementById('password').innerHTML = makePassword(length);
   }
 
   // Generate password without lowercase or uppercase characters
@@ -187,7 +187,7 @@ document.getElementById('generate').addEventListener("click", function() {
       return password;
     }
 
-    console.log(makePassword(length));
+    document.getElementById('password').innerHTML = makePassword(length);
   }
 
   // Generate password with just special characters
@@ -201,7 +201,7 @@ document.getElementById('generate').addEventListener("click", function() {
       return password;
     }
 
-    console.log(makePassword(length));
+    document.getElementById('password').innerHTML = makePassword(length);
   }
 
   // Generate password with just numerical characters
@@ -215,7 +215,7 @@ document.getElementById('generate').addEventListener("click", function() {
       return password;
     }
 
-    console.log(makePassword(length));
+    document.getElementById('password').innerHTML = makePassword(length);
   }
 
   // Generate password with just lowercase characters
@@ -229,7 +229,7 @@ document.getElementById('generate').addEventListener("click", function() {
       return password;
     }
 
-    console.log(makePassword(length));
+    document.getElementById('password').innerHTML = makePassword(length);
   }
 
   // Generate password with just uppercase characters
@@ -243,7 +243,7 @@ document.getElementById('generate').addEventListener("click", function() {
       return password;
     }
 
-    console.log(makePassword(length));
+    document.getElementById('password').innerHTML = makePassword(length);
   }
 });
 

@@ -14,3 +14,4 @@ Austin Schlander
 Jack Bashford from stack overflow to help with the copy text function
 
 #Link to GitHub Pages
+https://ajschlander.github.io/password-generator/

@@ -250,4 +250,14 @@ document.getElementById('generate').addEventListener("click", function() {
 // Add event listener to copy button
 document.getElementById('copy').addEventListener("click", function(){
   // copy the password generated to the clipboard
+  var copiedText = document.getElementById('password').innerText;
+  // Creating a textare so the content can be copied
+  var ptag = document.createElement("textarea");
+  document.body.appendChild(ptag);
+  ptag.value = copiedText;
+  ptag.select();
+  document.execCommand("copy");
+  // Remove the textare to revert back to normal
+  document.body.removeChild(ptag);
+  alert("Password has been copied to clipboard");
 });
